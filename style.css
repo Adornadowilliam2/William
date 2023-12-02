@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    animation: fadeIn 1s ease-in-out;
+    border: 2px solid black;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: #ffcc00;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.introduction {
+    max-width: 800px;
+    margin: 10px auto;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: lightblue;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.introduction div{
+    padding: 15px;
+}
+
+.introduction img {
+    width: 100px;
+    border-radius: 15px;
+    border: 1px black double;
+    background-color: white;
+    box-shadow: 5px 5px 5px black;
+}
+
+
+.introduction h1 {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-decoration: underline; 
+}
+
+.introduction mark{
+    font-size: 20px;
+    padding: 5px;
+}
+
+h1, h2, ul li{
+    margin: 4px;
+}
+
+.introduction h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    
+}
+
+.edu ul li{
+    font-weight: bold;
+}
+
+.address img, .knowledge img{
+    width: 250px;
+    margin: 20px;
+}
+
+
+body {
+  background: linear-gradient(to bottom right, #3cb371, #87cefa);
+  background-repeat: no-repeat;
+}
+
+.achievement img{
+  width: 200px;
+  margin: 10px;
+  filter: blur(2px);
+  transition: filter 1.5s ease-in;
+}
+
+.achievement img:hover{
+  filter: none;
+  cursor: pointer;
+}
+
+.rest{
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.rest p{
+  margin: 10px;
+  text-align: justify;
+}
+
+.limit{
+  height: 50vh;
+  border: 1px black double;
+  border-radius: 15px;
+  overflow: auto;
+  background-color: wheat;
+  box-shadow: 5px 5px 5px black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.limit:hover{
+    cursor: pointer;
+}
+
+i{
+  color: blue;
+}
